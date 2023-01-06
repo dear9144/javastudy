@@ -97,7 +97,7 @@ public class Ex04_switch {
 			
 			// 잘못된 점수 포함 x
 			
-			swith(score / 10) {
+			switch(score / 10) {
 			case 10 :
 			case 9 : System.out.println("수"); break;
 			case 8 : System.out.println("우"); break;
@@ -115,7 +115,7 @@ public class Ex04_switch {
 				
 		}
 			
-			//확인 하기 
+			
 			
 			
 			
