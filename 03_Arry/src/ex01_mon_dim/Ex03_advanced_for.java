@@ -36,10 +36,11 @@ public class Ex03_advanced_for {
 				public static void ex02() {
 					
 					String[] files = {"hello.txt","hi,txt","안녕.txt"};
-					for(String file : files) {
-						System.out.println(file);
+					for(String a : files) {
+						System.out.println(a);
 						
 					}
+					 
 					
 				}
 	public static void main(String[] args) {
