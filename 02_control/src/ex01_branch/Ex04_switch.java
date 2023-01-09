@@ -79,7 +79,7 @@ public class Ex04_switch {
 			
 			int score = 50;
 			String scoreName;
-			
+		
 			/*잘못된 점수 포함 시 
 			switch(score / 10) {
 			case 10 :
@@ -95,6 +95,9 @@ public class Ex04_switch {
 			default : System.out.println("잘못된 점수");
 			 */
 			
+			
+			
+			
 			// 잘못된 점수 포함 x
 			
 			switch(score / 10) {
@@ -108,9 +111,6 @@ public class Ex04_switch {
 }
 			
 			System.out.println(score + "입니다");
-			if(score< 0 || score >100) {
-				System.out.println("잘못된 점수");
-				return; // 
 			
 				
 		}
@@ -120,7 +120,7 @@ public class Ex04_switch {
 			
 			
 			
-		}
+		
 		public static void ex04() {
 			
 			//1분기 2분기 3분기 4분기 를 만드시오 
