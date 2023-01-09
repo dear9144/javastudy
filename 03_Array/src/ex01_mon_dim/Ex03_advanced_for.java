@@ -1,4 +1,4 @@
-package ex01_mon_dim;
+package ex01_one_dim;
 
 public class Ex03_advanced_for {
 		

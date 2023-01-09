@@ -1,8 +1,8 @@
-package ex01_mon_dim;
+package ex01_one_dim;
 
 public class Ex02_reference {
-	
-	
+
+
 	
 		public static void ex01() {
 			
