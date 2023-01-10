@@ -78,7 +78,7 @@ public class Ex04_switch {
 			//수,우,미,양,가,잘못된 점수
 			
 			int score = 50;
-			String scoreName;
+			//String scoreName;
 		
 			/*잘못된 점수 포함 시 
 			switch(score / 10) {

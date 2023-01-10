@@ -182,7 +182,7 @@ public class Ex01_array {
 
 			public static void ex07() {
 				
-				// 배열 초기화
+				// 배열 초기화 방법
 				int[] arr =  {10,20,30};
 				
 				// 배열 순회 
