@@ -215,7 +215,7 @@ public class Ex01_array {
 			
 			// 문제 다시 풀어보기.. 모르겠음
 		public static void main(String[] args) {
-		ex09();
+		ex07();
 		
 		
 

@@ -6,16 +6,9 @@ public class Car {
 		//필드
 		int oilPot;
 		int carSpeed; //pushAccel 마다 속도는 10씩 증가 , 최대속도 100, pushBreake 마다 속도 10감소 
-		// 메소드 - 기름 넣기 
 		
-		//void addOil(int oil) { // 제한 최대 50
-			//oilPot += oil;
-			//if(oilPot > 50) {
-			//	oilPot = 50;
-			//}
-			
-			
-		//}
+		
+	
 		
 		void addOil(int oil) {
 			if(oilPot + oil > 50) {

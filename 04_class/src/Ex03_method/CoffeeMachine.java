@@ -14,25 +14,28 @@ public class CoffeeMachine {
 		
 		//돈이 모자르면 money 그대로 반환 
 			
-		String coffee = menu[choice - 1];
+		
 		int price = prices[choice - 1];
 		 
-		/*
-		  if(price != 900) {
-		  	System.out.println(prices);
-		}
-			else if(price != 1500) {
-				System.out.println(prices);
-		}
-		moneyPot += price; //최종 
-		
-		 */
-		
+																/*
+																  if(price != 900) {
+																  	System.out.println(prices);
+																}
+																	else if(price != 1500) {
+																		System.out.println(prices);
+																}
+																moneyPot += price; //최종 
+																
+																 */
+																
 		if(money < price) {
 			CoffeeAndChange cnc = new CoffeeAndChange();
 			cnc.change = money;
 			return cnc;
 		}
+		
+		String coffee = menu[choice - 1];
+		moneyPot +=price;
 		
 		CoffeeAndChange cnc = new CoffeeAndChange(); //인수값이 뭔지 모름
 		cnc.coffee = coffee;
