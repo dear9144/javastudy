@@ -9,7 +9,7 @@ public class MyMath {
 	
 	//메소드 
 	//public double max();
-	public double getCirclearea(double radius) { //radius : 반지름
+	public static double getCirclearea(double radius) { //radius : 반지름
 	//프론트 할때 필요함 외우기 
 		return PI * radius * radius;		
 	}
