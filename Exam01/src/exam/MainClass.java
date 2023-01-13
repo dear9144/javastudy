@@ -99,6 +99,7 @@ public class MainClass {
 	
 	
 		
+		
 		for(int i = 0; i<100; i++) {
 			if((i+1) % 2 !=0) {
 				oddTotal = oddTotal + (i+1);
