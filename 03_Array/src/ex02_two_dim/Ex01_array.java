@@ -80,16 +80,17 @@ public class Ex01_array {
 	
 	public static void ex03() { // java c 에선 가로 세로 길이가 동일했어야 함 
 		// 1. 선언, 생성 분리
-			int [][] arr; // 배열 선언 
-			
-			//2 차원 배열 생성(행만 생성)
-			arr = new int[3][];
+			int[][] arr = {
+								{0,5},
+								{1,3},
+								{2,2}
+							};
 			
 			//각 행이 가질 열을 생성(각 1차원 배열의 생성)
-			arr[0] = new int[5];// 첫번째 1차원 배열 , 길이를 임의로 정함
+			/*arr[0] = new int[5];// 첫번째 1차원 배열 , 길이를 임의로 정함
 			arr[1] = new int[3];
 			arr[2] = new int[2];
-					
+			*/		
 			// 2차원 순회
 			for(int i = 0 ; i < arr.length; i++) { //arr.length - 행의 개수
 				for (int j = 0; j < arr[i].length; j++) {
@@ -121,7 +122,7 @@ public class Ex01_array {
 		
 	}
 	public static void main(String[] args) {
-		ex03();
+		ex04();
 		
 		// TODO Auto-generated method stub
 

@@ -42,7 +42,8 @@ public class MainClass {
 		String[] nameList = {"정숙","상철","미희"};
 		int[] ageList = {20,30,40};
 		
-		for(int i = 0; i< home.getArr().length;i++) { //home.arr.length - arr은 private (접근불가)라 사용x
+		for(int i = 0; i< home.getArr().length;i++) { 
+			//home.arr.length - arr은 private (접근불가)라 사용x
 			home.getArr()[i] = new Person(nameList[i], ageList[i]);
 			System.out.println("이름 : " + home.getArr()[i].getName() + ", 나이" + home.getArr()[i].getAge());
 		}

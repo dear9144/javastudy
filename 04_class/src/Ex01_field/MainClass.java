@@ -1,6 +1,6 @@
 package Ex01_field;
 
-public class mainClass {
+public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -41,7 +41,7 @@ public class mainClass {
 			
 			
 			//개별 생성
-			// 다음 값으 ㄹ가지는 객체 user2를 생성해 보세요
+			// 다음 값을 가지는 객체 user2를 생성해 보세요
 			/* 아이디 : master
 			 * 비밀번호 : 654321
 			 * 포인트 : 1000
@@ -70,7 +70,6 @@ public class mainClass {
 			
 			
 			//객체 선언 + 생성 강사님 코드 추가적으로  참고할 것
-			
 			
 			
  			
