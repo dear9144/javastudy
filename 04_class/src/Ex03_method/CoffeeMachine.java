@@ -17,16 +17,16 @@ public class CoffeeMachine {
 		
 		int price = prices[choice - 1];
 		 
-																/*
-																  if(price != 900) {
-																  	System.out.println(prices);
-																}
-																	else if(price != 1500) {
-																		System.out.println(prices);
-																}
-																moneyPot += price; //최종 
-																
-																 */
+		/*
+		  if(price != 900) {
+		  	System.out.println(prices);
+		}
+			else if(price != 1500) {
+				System.out.println(prices);
+		}
+		moneyPot += price; //최종 
+		
+		 */
 																
 		if(money < price) {
 			CoffeeAndChange cnc = new CoffeeAndChange();
