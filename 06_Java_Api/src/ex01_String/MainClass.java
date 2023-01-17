@@ -129,8 +129,8 @@ public class MainClass {
 		//소문자로 바꾸기 
 		
 		String str = "I am a boy";
-		System.out.println(str.toUpperCase);
-		System.out.println(str.toLowerCase);
+		System.out.println(str.toUpperCase());
+		System.out.println(str.toLowerCase());
 		
 		
 		
