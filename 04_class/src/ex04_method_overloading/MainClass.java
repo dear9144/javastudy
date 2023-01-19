@@ -4,13 +4,11 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			// Calculator 객체 선언 (어떤 클래스를 기반으로 )
-		
-			Calculator calc;
+			
 		
 			//Calculator 객체 생성
 			
-			calc = new Calculator();
+			Calculator calc = new Calculator();
 			
 			// addition(double a , double b) 호출 , 메소드 호출시 객체 생성 필요 위에걸 사용
 			

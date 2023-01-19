@@ -7,7 +7,8 @@ public class Calculator {
 	
 	/*
 	 메소드의 형식이 어떻게 되는가 
-	 (아무이름이나 써도 상관없음, 메인 메소드는 정해져있 MainClass //addition을 호출하면 무조건 double type
+	 (아무이름이나 써도 상관없음, 메인 메소드는 정해져있 MainClass //addition을 호출하면 
+	 무조건 double type
 	 							
 	 반환타입(double) 메소드명(매개변수) {
 		 메소드 본문
