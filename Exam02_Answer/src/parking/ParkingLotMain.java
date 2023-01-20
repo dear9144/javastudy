@@ -1,4 +1,4 @@
-package parking2;
+package parking;
 
 public class ParkingLotMain {
 
