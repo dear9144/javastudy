@@ -9,8 +9,8 @@ public class Practice {
 		// TODO Auto-generated method stub
 		//math.random 이 0.1xx ~ 0.9xx ~까지 뽑히는 난수형이라
 		//int 형 변경은 알겠는데 왜 str으로 변환하는가?
-		int[] numArr = new numArr[9];
-		numArr[0] = 0;
+		int[] numArr = {0,1,2};
+		/*numArr[0] = 0;
 		numArr[1] = 1;
 		numArr[2] = 2;
 		numArr[3] = 3;
@@ -20,18 +20,19 @@ public class Practice {
 		numArr[7] = 7;
 		numArr[8] = 8;
 		numArr[9] = 9;
-
+*/
 		
-		System.out.println(numArr);
+		//System.out.println(numArr);
 		
-		for(int i = 0; i<100; i++) {
-			int n = (int)(Math.random() * 10);
+		for(int i = 0; i<2; i++) {
+			int n = (int)(Math.random() * 3);
 			int tmp = numArr[0];
 			numArr[0]= numArr[n];
 			numArr[n] = tmp;
 		}
-		//System.out.println(Arrays.toString(numArr));
-		System.out.println(numArr);
+		int idx1 = 
+		System.out.println(Arrays.toString(numArr));
+		//System.out.println(tmp);
 	}
 
 }
