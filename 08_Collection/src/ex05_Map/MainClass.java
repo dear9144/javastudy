@@ -109,22 +109,18 @@ public class MainClass {
 
 			
 		//for 문 순회 
-		
-		
-		//List의 순회 
-		for(int i = 0; length = books.size(); i < length; i++) {
-			//map의 순회(List에 저장된 요소가 Map)
-			Map<String, Object> book = books.get(i); // < books[i] books.get(i)
-			for(Entry <String, Object> entry : book.entrySet()) {
-				System.out.println((i+1)+ "번째 책의 정보");
-				System.out.println(entry.getKey() + ":" + entry.getKey());
-			}
+	
+	for(int i = 0, length = books.size(); i < length; i++) {
+		// Map의 순회(List에 저장된 요소가 Map이다.)
+		Map<String, Object> book = books.get(i);// < books[i] books.get(i)
+		System.out.println((i + 1) + "번째 책의 정보");
+		for(Entry<String, Object> entry : book.entrySet()) {
+			System.out.println(entry.getKey() + " : " + entry.getValue());
 		}
-	
-		
-	
-		
 	}
+	
+}
+
 	public static void main(String[] args) {
 		ex04();
 	}

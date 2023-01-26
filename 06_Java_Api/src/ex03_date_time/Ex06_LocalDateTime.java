@@ -71,7 +71,7 @@ public class Ex06_LocalDateTime {
 		
 	}
 	public static void main(String[] args) {
-		ex05();
+		ex02();
 
 	}
 

@@ -11,7 +11,7 @@ public class Ex05_Calendar {
 
 
 	public static void main(String[] args) {
-		//Calendar
+		//Calendar Singletone 부분을 잘 볼 것 
 		//현재 날짜
 		Calendar now = Calendar.getInstance();
 		

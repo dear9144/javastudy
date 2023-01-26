@@ -125,7 +125,7 @@ public class Ex04_switch {
 			
 			//1분기 2분기 3분기 4분기 를 만드시오 
 			
-			int month = 1;
+			int month = 2;
 			
 			/*
 			 첫번째 방법
