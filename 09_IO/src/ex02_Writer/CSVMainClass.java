@@ -38,7 +38,7 @@ public class CSVMainClass {
 		
 		//ArrayList 저장
 		
-		//List<Map<String, Object>> products = Arrays.asList(product1, product2,product3);
+		//List<Map<String, Object>> productList = Arrays.asList(product1, product2, product3);
 	
 		List<Map<String, Object>> products = new ArrayList<Map<String,Object>>();
 		products.add(product1);

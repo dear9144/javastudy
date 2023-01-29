@@ -1,7 +1,7 @@
 package ex03_Set;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -86,12 +86,12 @@ public class MainClass {
 		System.out.println(set2);
 	}
 		
-	public static void ex06() {
+	public  static void ex06() {
 		Set<Integer> lotto = new HashSet<Integer>();
 		
 		//1~45 : 6개 랜덤 
 		while(lotto.size() < 6) {
-			lotto.add((int)Math.random()* 45 + 1);
+			lotto.add((int)(Math.random()* 45) +1 );
 		}
 		
 		System.out.println(lotto);

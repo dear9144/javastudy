@@ -10,13 +10,13 @@ public class MainClass {
 		
 		//배열 리스트 선언 및 생성
 		List<String> list = new ArrayList<String>();
-		// TODO Auto-generated method stub
+		
 		//추가
-		//list.add(0, "spring"); 
+		list.add(0, "spring"); 
 		list.add("summer");  // 인덱스의 지정이 없으면 항상 마지막에 추가됨
 		list.add("autumn");
 		list.add("frog");
-		list.add("winter");
+		list.add(0,"winter");
 		list.add(0, "spring");  // 인덱스 0에 spring 추가됨
 		
 		//수정

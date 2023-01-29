@@ -141,27 +141,23 @@ public class JSONMainClass {
 		List<Map<String, Object>> products = Arrays.asList(product1, product2,product3); //- 제이슨 어레이
 		
 		JSONArray arr = new JSONArray(products);
-		System.out.println(products);
+		String content = arr.toString();// content를 string으로 변환한다
 		
 		//prodict.json
 		
-		File dir = new File("C:" + File.separator + "strage");
+		File dir = new File("C:" + File.separator + "storage");
 		if(dir.exists()== false) {
 			dir.mkdirs();
 		}
-		File file = new File(dir, "prodict.json");
+		File file = new File(dir, "product.json");
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
-			bw.write("content");
+			bw.write(content); 
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
-		
-	private static BufferedWriter BufferedWriter(FileWriter fileWriter) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	public static void main(String[] args) {
 		ex05();

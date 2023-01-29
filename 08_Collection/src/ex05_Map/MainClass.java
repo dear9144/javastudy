@@ -19,15 +19,17 @@ public class MainClass {
 		// put(Key, Value)
 		person.put("name", "홍길동");
 		person.put("age", 30);
-		System.out.println(person);
+		System.out.println("첫번째 답 " + person);
 		
 		//수정 
 		//put(Key,Value)
 		person.put("age", 40); //기존 key와 동일한 키를 전달하면 해당 키값의 value가 수정된다.
+		System.out.println("수정파트 답" + person);
 		
 		//삭제
 		//remove (key)해당 키값의 엔트리를 지워줌 
-		int age = (int)person.remove("age"); //삭제된 Value가 반환된다 Value는 오브젝트 타입이므로
+		int age = (int)person.remove("age"); 
+		//삭제된 Value가 반환된다 Value는 오브젝트 타입이므로
 		//캐스팅을 해야 사용 가능 
 		System.out.println("삭제된 나이 : " + age);
 		//확인 
@@ -122,7 +124,7 @@ public class MainClass {
 }
 
 	public static void main(String[] args) {
-		ex04();
+		ex01();
 	}
 
 }
