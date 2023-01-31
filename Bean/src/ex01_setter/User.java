@@ -3,10 +3,6 @@ package ex01_setter;
 public class User {
 	
 	private String id;
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", pw=" + pw + "]";
-	}
 	private String pw;
 	
 	public String getId() {
@@ -21,7 +17,10 @@ public class User {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
-	
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", pw=" + pw + "]";
+	}
 	
 
 }
