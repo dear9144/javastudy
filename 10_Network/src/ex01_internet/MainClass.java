@@ -186,6 +186,7 @@ public class MainClass {
 	
 	public static void ex05() {
 		//문서 내려받기
+		//노션 참고 
 		
 		String apiURL = "https://gdlms.cafe24.com/uflist/curri/10004/bbs/68_63d8848f7d506.txt";
 		URL url = null;
@@ -261,7 +262,7 @@ public class MainClass {
 				//과정이 이것 
 			}else {
 				reader = new BufferedReader(new InputStreamReader(con.getErrorStream()));
-			}
+			}//getErrorStream 프로스세의 에러 스트림을 실행 시킨다.
 			StringBuilder sb = new StringBuilder();
 			char[] cbuf = new char[2];
 			int readCount = 0;

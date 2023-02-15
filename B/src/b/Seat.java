@@ -26,6 +26,9 @@ public class Seat {
 		setName(name);
 		//1. 예약name을 맞추려고 ,2. reserve를 살리기 위해 사용 
 	}
+	public void cancel() {
+		name = null;
+	}
 	//이 좌석을 누가 차지했니? 안했니?
 	public boolean isOccupied() { //좌석을 점유되었으면 true 점유되지 않았으면 false
 		if(name == null) {

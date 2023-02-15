@@ -39,10 +39,24 @@ public class ConsertHall {
 	}
 	
 
-
+	//예약 취소하기 reserve랑 같은 맥락 
+	public void cancel() {
+		String seatType = JOptionPane.showInputDialog("좌석 타입을 입력하세요");
+		for(int i = 0; i<seatTypes.length; i++) {
+			if(seatType.equals(seatTypes[i])){
+			seatGroups[i].cancel();
+			return;//예약 종료하기
+			}
+		}
+		JOptionPane.showMessageDialog(null, "입력한"+seatType + "타입은 존재하지 않습니다");
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		ConsertHall hall = new ConsertHall();
 		hall.reserve();
+		hall.cancel();
 		hall.info();
 	}
 	}

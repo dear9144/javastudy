@@ -45,6 +45,7 @@ public class CSVMainClass {
 		products.add(product2);
 		products.add(product3);
 		
+		System.out.println(products);
 		
 		
 
@@ -69,13 +70,14 @@ public class CSVMainClass {
 			
 			for(int i = 0; i< products.size(); i++) {
 				Map<String,Object> product = products.get(i); //array에 있는거 꺼내는  get
+				//products(i)에 있는것들을 꺼내기 위해서?
 				out.println(product.get("model") + "," + product.get("maker") + "," + product.get("price"));
 			}
-		
+		//sysout 했을때 기본 내용은 왜 나오는지 
 		}catch(IOException e) {
 		e.printStackTrace();
-	
-	}
+		
+		}
 
 }
 		

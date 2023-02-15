@@ -67,7 +67,7 @@ public class SeatGroup {
 		String name = JOptionPane.showInputDialog("취소자 성함을 입력하세요");
 		for(int i = 0; i<seats.length; i++) {
 			if(seats[i].isOccupied() && seats[i].isMatched(name)) { //점유되어있습니까? 를 먼저 확인 같은 이름은 없다는 가정하에 푼다 
-			seats[i].setName(null);
+			seats[i].cancel();
 			JOptionPane.showMessageDialog(null, "예약자" + name  + "의 예약이 취소되었습니다");
 			return true;
 			}
