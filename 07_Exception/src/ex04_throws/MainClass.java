@@ -1,4 +1,4 @@
-package ex04_throw;
+package ex04_throws;
 
 public class MainClass {
 

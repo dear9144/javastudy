@@ -1,0 +1,23 @@
+package ex02_create;
+
+import java.sql.Connection;
+
+public class MemberTableMainClass {
+
+	public static void main(String[] args) {
+		/*	
+		CREATE TABLE BOARD_TBL(
+		BOARD_NO NUMBER NOT NULL,
+		MEMBER_NO NUMBER NOT NULL,
+		TITLE VARCHAR2(100 BYTE) NOT NULL,
+		CONTENT VARCHAR2(100 BYTE),
+		CREATE_DATE DATE NOT NULL,
+		CONSTRAINT PK_BOARD PRIMARY KEY(BOARD_NO)
+		CONSTRAINT FK_BOARD FOREIGN KEY(MEMBER_NO) REFERENCES
+		MEMBER_TABLE(MEMBER_NO) ON DELETE CASECADE
+		)
+	 */
+
+	}
+
+}

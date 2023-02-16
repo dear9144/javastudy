@@ -1,8 +1,12 @@
 package ex01_connection;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
 public class MainClass {
 
@@ -50,8 +54,85 @@ public class MainClass {
 		
 	}
 	
+	public static void ex03() {
+		
+		Connection con = null;
+		BufferedReader reader = null;
+		try {
+			
+			//프로퍼티 파일 읽는 문자 입력 스트림 생성하기
+			reader = new BufferedReader(new FileReader("db.properties"));
+			
+			//프로퍼티 파일을 읽어서 사용자 정보 처리하기 
+			
+			//프로퍼티 객체 생성하기
+			Properties properties = new Properties();
+			properties.load(reader); //버퍼드 리더를 썼으니 로드 리더를 쓰는게 맞음
+			
+			
+			//프로퍼티 객체에 저장된 각 Property읽기
+			String url = properties.getProperty("url");
+			String user = properties.getProperty("user");
+			String password = properties.getProperty("password");
+			
+			//DriverManager로부터 Connection 객체 얻기
+			con = DriverManager.getConnection(url, user, password);
+			System.out.println("DB에 접속되었습니다.");
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			
+			try {
+				if(con != null) {
+					con.close();
+				}
+			}catch (SQLException e) {
+				e.printStackTrace();// TODO: handle exception
+			}
+		}
+		
+		
+		
+		
+		
+	}//이건 학습용으로 나눠 쓴거고 실제로 할땐 나눠서 하지 않아도 됨 
+		
+	
+	public static Connection getConnection(){
+		
+		
+		Connection con = null; 
+		
+		try {
+			
+			Class.forName("oracle.jdbc.OracleDriver");
+			
+			Properties properties = new Properties();
+			properties.load(new BufferedReader(new FileReader("db.properties")));
+			
+			con = DriverManager.getConnection(properties.getProperty("url")
+					,properties.getProperty("user")
+					,properties.getProperty("password"));
+			
+			
+			
+		} catch(Exception e) {	// ClassNotFoundException,SQLException,IOException 한번에 처리할 예정 
+			e.printStackTrace();
+		}//이쪽에 finally 를 안 적는건 닫는 메소드는 따로 적어야 하기 때문, 쓰지도 않고 닫았기 때문 
+		
+		return con;
+	}// 닫힌 상태로 메소드를 받으면 어떻게 써 ?,, 못 써
+	
+	// 이제 getConnection만 호출하면 반복되는 connection만들기를 안해도 됨
+	
+	
 	public static void main(String[] args) {
-		ex02();
+		Connection con = getConnection();
+		System.out.println("DB에 접속되었습니다.");
+		//con.close(); //만약 닫으려면 여기서 닫는것 굳이 안해도 됨(try catch를 통해서 써야함)
 
 	}
 
