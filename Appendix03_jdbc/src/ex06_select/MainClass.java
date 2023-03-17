@@ -161,17 +161,25 @@ public class MainClass {
 			while(rs.next()) {
 				
 				// 결과 행의 각 칼럼 정보 읽기 (이름으로 불러오기를 확인해볼 것) 
-				Member member = new Member();
+				/*Member member = new Member();
 				member.setMember_no(rs.getInt("MEMBER_NO"));
 				member.setId(rs.getString("ID"));
 				member.setName(rs.getString("NAME"));
 				member.setAddress(rs.getString("ADDRESS"));
 				member.setJoin_date(rs.getDate("JOIN_DATE"));
+				*/
+				
+				Member member = new Member();
+				member.setMember_no(rs.getInt(1));
+				member.setId(rs.getString(2));
+				member.setName(rs.getString(3));
+				member.setAddress(rs.getString(4));
+				member.setJoin_date(rs.getDate(5));
 				
 				//member 객체를 ArrayList 에 저장하기
 				//계속해서 결과를 누적하겠다는 것 
 				memberList.add(member);
-			}//else일 경우 아무일도 안할 예정이기에 else는 만들지 않는다 
+			}
 			
 			//while문이 종료된 뒤 ArrayList의 size가 0 이라면 조회된 결과가 없었다
 			for(int i = 0; i< memberList.size(); i++) {

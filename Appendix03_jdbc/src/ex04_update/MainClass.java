@@ -38,7 +38,7 @@ public class MainClass {
 			String id = "admin"; //master일땐 어떻게 될까? 0행이 return이 됨 
 			ps.setString(1, id);
 			
-			int updateResult = ps.executeUpdate();
+	
 			
 			int insResult = ps.executeUpdate();
 			

@@ -121,7 +121,8 @@ public class MainClass {
 			con = DriverManager.getConnection(url, p);
 			
 			String sql = "UPDATE BOARD_TBL SET TITLE = '[New]' || TITLE";
-			sql += " WHERE MEMBER_NO = (SELECT MEMBER_NO FROM MEMBER_TBL WHERE ID = ?)"; // 이때 ?는 변수를 쓸 것입니다의 의미 
+			sql += " WHERE MEMBER_NO = (SELECT MEMBER_NO FROM MEMBER_TBL WHERE ID = ?)"; 
+			// 이때 ?는 변수를 쓸 것입니다의 의미 
 			//보드 테이블엔 ID 가 없어서 방법이 없음 서브쿼리로 하는 수밖에
 			// 단일행 서브쿼리임 (UNIQUE , PK 둘중 하나이기 때문에)
 			// 그렇기에 단일행 연산자인 (=) 가 들어간 것임 
@@ -130,7 +131,6 @@ public class MainClass {
 			String id = "admin"; //master일땐 어떻게 될까? 0행이 return이 됨 
 			ps.setString(1, id);
 			
-			int updateResult = ps.executeUpdate();
 			
 			int insResult = ps.executeUpdate();
 			
